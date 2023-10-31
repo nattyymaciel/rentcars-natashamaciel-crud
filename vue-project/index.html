@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto</title>
+</head>
+
+<body>
+  <!-- Conteúdo do projeto aqui -->
+
+  <header>
+    <div class="container">
+      <h1 class ="titulo">CRUD de Veículos</h1>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <h2>Listagem de Veículos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Locadora</th>
+            <th>Modelo</th>
+            <th>Marca</th>
+            <th>Ano</th>
+            <th>Motor</th>
+            <th>Portas</th>
+            <th>Cambio</th>
+            <th>Ar-condicionado</th>>
+          </tr>
+        </thead>
+        <tbody id="tabela-veiculos">
+          <tr class="veiculo" id="1">
+            <td class="info-locadora">Rent</td>
+            <td class="info-modelo">Nissan</td>
+            <td class="info-marca">seila</td>
+            <td class="info-ano">2010</td>
+            <td class="info-motor">1.20</td>
+            <td class="info-portas">4</td>
+            <td class="info-cambio">automatico</td>
+            <td class="info-ar-condicionado">sim</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <div id="app">
+    
+
+    <button id="adicionar-veiculo" class="botao bto-principal">Adicionar</button>
+    <!-- Ao prescionar o bt adicionar, abrir formulario cod.A-->
+    <button id="listar-veiculos" class="botao bto-principal">Exibir Lista de Veículos</button>
+    <button id="atualizar" class="botao bto-principal">Atualizar Veículo</button>
+    <!-- Solicitar o id do veiculo e exibir o mesmo formulario cod.A, porem preenchido para que a pessoa
+    escolha o campo a alterar-->
+    <button id="deletar" class="botao bto-principal">Deletar</button>
+    <!-- solicitar o id do veiculo desejado e pagar, exibir msg de sucesso ou falha-->
+    <!-- cod alura para add dados, reaproveitar para atualizar dados -->
+
+    <section class="container">
+      <h2 id="titulo-form">Adicionar Novo Veívulo</h2>
+      <form id="form-adiciona">
+          <div class="grupo">
+              <label for="locadora">Locadora:</label>
+              <input id="locadora" name="locadora" type="text" class="campo">
+          </div>
+          <div class="grupo">
+              <label for="modelo">Modelo:</label>
+              <input id="modelo" name="modelo" type="text" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+              <label for="marca">Marca:</label>
+              <input id="marca" name="marca" type="text" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+              <label for="ano">Ano:</label>
+              <input id="ano" name="ano" type="text" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+            <label for="motor">Motor</label>
+            <input id="motor" name= "motor" type="number" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+            <label for="portas">Portas:</label>
+            <input id="portas" name="portas" type="number" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+            <label for="cambio">Câmbio:</label>
+            <input id="cambio" name="cambio" type="text" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+            <label for="ar_condicionado">Ar Condicionado:</label>
+            <input id="ar_condicionado" name="ar_condicionado" type="text" class="campo campo-medio">
+          </div>
+        
+
+
+          <button id="salvar" class="botao salvar">Salvar</button>
+          <button id="atualizar-lista" class="botao bto-atualizar">Atualizar Lista</button>
+      </form>
+    </section>
+    <button onclick="exibirMensagem()">Clique-me</button>
+
+    <form onsubmit="validarFormulario()">
+      <!-- campos do formulário aqui -->
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+  <script src="src/main.js"> </script>
+</body>
+</html>
