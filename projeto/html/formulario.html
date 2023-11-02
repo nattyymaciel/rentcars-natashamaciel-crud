@@ -11,7 +11,7 @@
     
         <h1 id="titulo-form">Adicionar Novo Veívulo</h1>
         <br>
-        <form id="form-adiciona">
+        <form id="form-adiciona" method="get">
             <div class="grupo">
                 <label for="locadora">Locadora: <br></label>
                 <input id="locadora" name="locadora" type="text" required class="campo campo-medio">
@@ -26,15 +26,27 @@
             </div>
             <div class="grupo">
                 <label for="ano">Ano:<br></label>
-                <input id="ano" name="ano" type="text" required class="campo campo-medio">
+                <input id="ano" name="ano" type="number" min="2000" max="2023" required class="campo campo-medio">
             </div>
             <div class="grupo">
                 <label for="motor">Motor:<br></label>
-                <input id="motor" name= "motor" type="number" required class="campo campo-medio">
+                <select name="motor" id="motor">
+                    <option value="1.0">Motor 1.0</option><br>
+                    <option value="1.4">Motor 1.4</option><br>
+                    <option value="1.6">Motor 1.6</option><br>
+                    <option value="1.8">Motor 1.8</option><br>
+                    <option value="2.0">Motor 2.0</option><br>
+                </select>
             </div>
             <div class="grupo">
                 <label for="portas">Portas:<br></label>
-                <input id="portas" name="portas" type="number" required class="campo campo-medio">
+                <select name="portas" id="portas">
+                    <option value="2">Duas portas</option>
+                    <br>
+                    <option value="3">Três portas</option>
+                    <br>
+                    <option value="4">Quatro portas</option>
+                </select>
             </div>
             <div class="grupo">
                 <label for="cambio">Câmbio:<br></label>
