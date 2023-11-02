@@ -1,0 +1,56 @@
+@import './main.css';
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+h2 {
+  color: #333;
+}
+
+
+table#automovel {
+  border: 1px solid black;
+  color: #333;
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+table#automovel td,th{
+  border: 1px solid black;
+  padding: 8px;
+  padding-top: 0%;
+
+}  
+
+button {
+  background-color: rgb(45, 96, 225);
+  text-decoration: none;
+  color: #f4f4f4;  
+}
+
+
+section#menu{
+  margin-inline: 8px;
+}
+
+form#form-adiciona {
+  color: black;
+}
+ input {
+  padding-inline: 100%;
+ }

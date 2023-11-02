@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/style.css">
+        <title>Veiculos</title>
+    </head>
+    <body>
+    <section id="menu">
+    
+        <h1 id="titulo-form">Adicionar Novo Veívulo</h1>
+        <br>
+        <form id="form-adiciona">
+            <div class="grupo">
+                <label for="locadora">Locadora: <br></label>
+                <input id="locadora" name="locadora" type="text" required class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="modelo">Modelo: <br></label>
+                <input id="modelo" name="modelo" type="text" required class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="marca">Marca:<br></label>
+                <input id="marca" name="marca" type="text" required class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="ano">Ano:<br></label>
+                <input id="ano" name="ano" type="text" required class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="motor">Motor:<br></label>
+                <input id="motor" name= "motor" type="number" required class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="portas">Portas:<br></label>
+                <input id="portas" name="portas" type="number" required class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="cambio">Câmbio:<br></label>
+                <input id="cambio" name="cambio" type="text" required class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="ar_condicionado">Ar Condicionado:<br></label>
+                <input id="ar_condicionado" name="ar_condicionado" type="checkbox" class="campo campo-medio">
+            </div>
+            
+            <button id="salvar" class="botao salvar"><a href="index.html"></a>Salvar</button>
+            <br>
+            <button id="atualizar-lista" class="botao bto-atualizar">Atualizar Lista</button>
+        </form>
+    </section>
+    </body>
+
+
+<script src="../javascript/main.js"> </script>
+</html>
