@@ -14,7 +14,7 @@
     <h2>Adicionar Novo Veículo</h2>
 
     <!-- FORMULARIO - INICIO -->
-    <form id="form-adiciona" method="post">
+    <form id="veiculo-form">
 
       <label for="locadora">Locadora:</label>
       <input id="locadora" name="locadora" type="text" required>
@@ -48,14 +48,15 @@
       <input id="cambio" name="cambio" type="text" required>
 
       <label for="ar_condicionado">Ar Condicionado:</label>
-      <input id="ar_condicionado" name="ar_condicionado" type="checkbox">
+      <input id="ar_condicionado" name="ar_condicionado" type="checkbox" value="true">
 
-      <button id="salvar" class="botao-salvar">Salvar</button>
+      <button id="salvar" type="submit">Salvar</button>
+      <button id="limpar" type="reset">Limpar</button>
 
     </form>
     <!-- FORMULARIO FIM -->
     <!-- TABELA COMEÇO -->
-    <button id="atualizar-lista" class="botao bto-atualizar">Atualizar Lista</button>
+    <button id="atualizar-lista" onclick="atualizarLista()">Atualizar Lista</button>
 
     <table id="automovel">
       <thead>
@@ -73,15 +74,15 @@
         </tr>
       </thead>
       <tbody id="tabela-veiculos">
-        <tr class="veiculo">
-          <td class="info-locadora">Rent</td>
-          <td class="info-modelo">Nissan</td>
-          <td class="info-marca">seila</td>
-          <td class="info-ano">2010</td>
-          <td class="info-motor">1.20</td>
-          <td class="info-portas">4</td>
-          <td class="info-cambio">automatico</td>
-          <td class="info-ar-condicionado">sim</td>
+        <tr class="veiculo" hidden>
+          <td class="info-locadora"></td>
+          <td class="info-modelo"></td>
+          <td class="info-marca"></td>
+          <td class="info-ano"></td>
+          <td class="info-motor"></td>
+          <td class="info-portas"></td>
+          <td class="info-cambio"></td>
+          <td class="info-ar-condicionado"></td>
           <td><button id="apagar">Apagar</button></td>
           <td><button id="editar">Editar</button></td>
           <!--Arrumar os icones de lixeira e caneta para os botoes no lugar dos nomes da funçoes

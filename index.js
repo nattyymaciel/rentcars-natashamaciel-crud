@@ -61,6 +61,14 @@ connection.sync({force: true})
 const app = express()
 app.use(express.json());
 
+const allowCrossDomain = (req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Headers', 'Content-Type')
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
+    next();
+  };
+
+app.use(allowCrossDomain)
 
 
 app.post('/veiculos', (req, res) => {
