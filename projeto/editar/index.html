@@ -48,49 +48,13 @@
       <input id="cambio" name="cambio" type="text" required>
 
       <label for="ar_condicionado">Ar Condicionado:</label>
-      <input id="ar_condicionado" name="ar_condicionado" type="checkbox">
+      <input id="ar_condicionado" name="ar_condicionado" type="checkbox" value="true">
 
       <button id="salvar" type="submit">Salvar</button>
       <button id="limpar" type="reset">Limpar</button>
 
     </form>
     <!-- FORMULARIO FIM -->
-    <!-- TABELA COMEÇO -->
-    <button id="atualizar-lista" onclick="atualizarLista()">Atualizar Lista</button>
-
-    <table id="automovel">
-      <thead>
-        <tr>
-          <th>Locadora</th>
-          <th>Modelo</th>
-          <th>Marca</th>
-          <th>Ano</th>
-          <th>Motor</th>
-          <th>Portas</th>
-          <th>Cambio</th>
-          <th>Ar-condicionado</th>
-          <th>Apagar</th>
-          <th>Editar</th>
-        </tr>
-      </thead>
-      <tbody id="tabela-veiculos">
-        <tr class="veiculo" hidden>
-          <td class="info-locadora"></td>
-          <td class="info-modelo"></td>
-          <td class="info-marca"></td>
-          <td class="info-ano"></td>
-          <td class="info-motor"></td>
-          <td class="info-portas"></td>
-          <td class="info-cambio"></td>
-          <td class="info-ar-condicionado"></td>
-          <td><button id="apagar">Apagar</button></td>
-          <td><button id="editar">Editar</button></td>
-          <!--Arrumar os icones de lixeira e caneta para os botoes no lugar dos nomes da funçoes
-            e arrumar eventos-->
-        </tr>
-      </tbody>
-    </table>
-    <!-- TABELA FIM-->
   </main>
 
   <script src="javascript/index.js"></script>

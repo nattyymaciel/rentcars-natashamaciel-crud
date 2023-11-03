@@ -39,8 +39,19 @@ function buildJsonFormData(form) {
 
     jsonFormData["id"] = generateId(50);
 
+    var arCondicionadoSelecionado = false
     for (const pair of new FormData(form)) {
-        jsonFormData[pair[0]] = pair[1];
+        if (pair[0] == 'ar_condicionado') {
+            if (pair[1] == 'on') {
+                jsonFormData[pair[0]] = true;
+                arCondicionadoSelecionado = true
+            }
+        } else {
+            jsonFormData[pair[0]] = pair[1];
+        }
+    }
+    if (!arCondicionadoSelecionado) {
+        jsonFormData['ar_condicionado'] = false;
     }
     return jsonFormData;
 }
