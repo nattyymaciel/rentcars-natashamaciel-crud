@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>CRUD</title>
+</head>
+
+<body>
+  <main>
+    <h1>CRUD de Veículos</h1>
+    <h2>Adicionar Novo Veículo</h2>
+
+    <!-- FORMULARIO - INICIO -->
+    <form id="form-adiciona" method="post">
+
+      <label for="locadora">Locadora:</label>
+      <input id="locadora" name="locadora" type="text" required>
+
+      <label for="modelo">Modelo:</label>
+      <input id="modelo" name="modelo" type="text" required>
+
+      <label for="marca">Marca:</label>
+      <input id="marca" name="marca" type="text" required>
+
+      <label for="ano">Ano:</label>
+      <input id="ano" name="ano" type="number" min="2000" max="2023" required>
+
+      <label for="motor">Motor:</label>
+      <select name="motor" id="motor">
+        <option value="1.0">Motor 1.0</option>
+        <option value="1.4">Motor 1.4</option>
+        <option value="1.6">Motor 1.6</option>
+        <option value="1.8">Motor 1.8</option>
+        <option value="2.0">Motor 2.0</option>
+      </select>
+
+      <label for="portas">Portas:</label>
+      <select name="portas" id="portas">
+        <option value="2">Duas portas</option>
+        <option value="3">Três portas</option>
+        <option selected value="4">Quatro portas</option>
+      </select>
+
+      <label for="cambio">Câmbio:</label>
+      <input id="cambio" name="cambio" type="text" required>
+
+      <label for="ar_condicionado">Ar Condicionado:</label>
+      <input id="ar_condicionado" name="ar_condicionado" type="checkbox">
+
+      <button id="salvar" class="botao-salvar">Salvar</button>
+
+    </form>
+    <!-- FORMULARIO FIM -->
+    <!-- TABELA COMEÇO -->
+    <button id="atualizar-lista" class="botao bto-atualizar">Atualizar Lista</button>
+
+    <table id="automovel">
+      <thead>
+        <tr>
+          <th>Locadora</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Ano</th>
+          <th>Motor</th>
+          <th>Portas</th>
+          <th>Cambio</th>
+          <th>Ar-condicionado</th>
+          <th>Apagar</th>
+          <th>Editar</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-veiculos">
+        <tr class="veiculo">
+          <td class="info-locadora">Rent</td>
+          <td class="info-modelo">Nissan</td>
+          <td class="info-marca">seila</td>
+          <td class="info-ano">2010</td>
+          <td class="info-motor">1.20</td>
+          <td class="info-portas">4</td>
+          <td class="info-cambio">automatico</td>
+          <td class="info-ar-condicionado">sim</td>
+          <td><button id="apagar">Apagar</button></td>
+          <td><button id="editar">Editar</button></td>
+          <!--Arrumar os icones de lixeira e caneta para os botoes no lugar dos nomes da funçoes
+            e arrumar eventos-->
+        </tr>
+      </tbody>
+    </table>
+    <!-- TABELA FIM-->
+  </main>
+
+  <script src="javascript/index.js"></script>
+</body>
+
+</html>

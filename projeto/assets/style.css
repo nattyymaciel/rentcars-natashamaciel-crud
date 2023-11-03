@@ -1,24 +1,19 @@
-@import './main.css';
-@import './base.css';
-
+html,
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f8f8;
   color: #333;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-}
-
-header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
+input[type=text],
+input[type=number],
+input[type=checkbox],
+select {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 button {
@@ -27,37 +22,32 @@ button {
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
-}
-/* Tabelas e Formulário*/
-h2 {
-  color: #333;
+  margin-top: 12px;
+  border-radius: 8px;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+/* Tabelas e Formulário*/
 
 table#automovel {
   border: 1px solid black;
   color: #333;
   border-spacing: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 12px;
 }
-table#automovel td,th{
+
+table#automovel td,
+th {
   border: 1px solid black;
   padding: 8px;
   padding-top: 0%;
   text-align: center;
-  
-}  
-th{
+
+}
+
+th {
   background-color: rgb(175, 175, 175);
 }
-
-
-section#menu{
-  margin-inline: 8px;
-}
-
-form#form-adiciona {
-  color: black;
-}
- 
