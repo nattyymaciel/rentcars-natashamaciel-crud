@@ -14,6 +14,7 @@ botaoAdiciona.addEventListener("click", function(event){
     tabela.appendChild(trVeiculo);
 
     formulario.reset();
+    
 
 })
 
