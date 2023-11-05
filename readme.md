@@ -14,7 +14,7 @@ Funcionalidade 3: Excluir o produto do catálogo;
 Funcionalidade 4: Consultar os dados dos produtos existentes no banco de dados.
 
 
-## Layout ou Deploy da Aplicação :dash:
+## Layout
 
 > Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
 
@@ -61,28 +61,11 @@ $ npm run start
 
 
 ## Resolvendo Problemas :exclamation:
+* No backend, o exemplo fornecido para o endpoint de DELETE estava com um problema para preencher a resposta de sucesso devido ao formato utilizado. Foi alterado para o mesmo formato do exemplo de status de falha para a correção no funcionamento.
+* Ao realizar as chamadas do frontend para o backend houve um problema referente ao erro de CORS. Após muita pesquisa foi realizada a correção acrescentando na tag “app” do backend a configuração de liberação de acesso aos endpoints para qualquer origem.
 
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
-
-## Tarefas em aberto
-
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
-
-:memo: Tarefa 1 
-
-:memo: Tarefa 2 
-
-:memo: Tarefa 3 
+ 
 
 ## Desenvolvedores/Contribuintes :octocat:
 
-Liste o time responsável pelo desenvolvimento do projeto
-
-| [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |
-| :---: | :---: | :---: 
-
-## Licença 
-
-The [MIT License]() (MIT)
-
-Copyright :copyright: Ano - Titulo do Projeto
+[Natasha Maciel](https://github.com/nattyymaciel)
