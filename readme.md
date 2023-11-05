@@ -9,8 +9,11 @@ O projeto consiste na criação de uma aplicação que irá realizar o gerenciam
 ## Funcionalidades
 
 Funcionalidade 1: Adicionar um produto ao catálogo da empresa;
+
 Funcionalidade 2: Alterar os dados de um produto já existente;
+
 Funcionalidade 3: Excluir o produto do catálogo;
+
 Funcionalidade 4: Consultar os dados dos produtos existentes no banco de dados.
 
 
