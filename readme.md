@@ -45,7 +45,7 @@ $ docker run --name basic-mysql --rm -v /tmp/mysql-data:/var/lib/mysql -e MYSQL_
 $ npm run start
 ```
 
-### no Frontend
+### No Frontend
 1. Na pasta my_app/frontend abra no navegador o arquivo index.html
 
 ## Linguagens, dependencias e libs utilizadas :books:
