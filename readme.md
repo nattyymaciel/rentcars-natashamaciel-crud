@@ -16,11 +16,17 @@ Funcionalidade 4: Consultar os dados dos produtos existentes no banco de dados.
 
 ## Layout
 
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
+1. Tela inicial
+![image](https://github.com/nattyymaciel/my_app/blob/main/prints/tela-inicial.png)
 
-... 
+2. Tela de adicionar novo veículo
+![image](https://github.com/nattyymaciel/my_app/blob/main/prints/adicionar-veiculo.png)
 
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
+3. Tela de listar veículos
+![image](https://github.com/nattyymaciel/my_app/blob/main/prints/listar-veiculo.png)
+
+4. Tela de editar veículo
+![image](https://github.com/nattyymaciel/my_app/blob/main/prints/editar-veiculo.png)
 
 ## Pré-requisitos
 
@@ -28,7 +34,7 @@ Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
 * Docker
 
 
-## Como rodar a aplicação :arrow_forward:
+## Como rodar a aplicação
 
 ### No Backend
 1. Execute o Docker
@@ -48,24 +54,24 @@ $ npm run start
 ### No Frontend
 1. Na pasta my_app/frontend abra no navegador o arquivo index.html
 
-## Linguagens, dependencias e libs utilizadas :books:
+## Linguagens, dependencias e libs utilizadas
 
 * Node JS LTS (versão 18):
-** Express;
-** Sequelize;
-** Nodemon;
+  * Express;
+  * Sequelize;
+  * Nodemon;
 * JavaScript;
 * HTML;
 * CSS;
 * MySQL;
 
 
-## Resolvendo Problemas :exclamation:
+## Resolvendo Problemas
 * No backend, o exemplo fornecido para o endpoint de DELETE estava com um problema para preencher a resposta de sucesso devido ao formato utilizado. Foi alterado para o mesmo formato do exemplo de status de falha para a correção no funcionamento.
 * Ao realizar as chamadas do frontend para o backend houve um problema referente ao erro de CORS. Após muita pesquisa foi realizada a correção acrescentando na tag “app” do backend a configuração de liberação de acesso aos endpoints para qualquer origem.
 
  
 
-## Desenvolvedores/Contribuintes :octocat:
+## Desenvolvedores
 
 [Natasha Maciel](https://github.com/nattyymaciel)
