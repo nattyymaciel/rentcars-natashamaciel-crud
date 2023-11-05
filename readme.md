@@ -46,15 +46,19 @@ $ npm run start
 ```
 
 ### no Frontend
+1. Na pasta my_app/frontend abra no navegador o arquivo index.html
 
 ## Linguagens, dependencias e libs utilizadas :books:
 
-- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
-- [React PDF](https://react-pdf.org/)
+* Node JS LTS (versão 18):
+** Express;
+** Sequelize;
+** Nodemon;
+* JavaScript;
+* HTML;
+* CSS;
+* MySQL;
 
-...
-
-Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo Github 
 
 ## Resolvendo Problemas :exclamation:
 
