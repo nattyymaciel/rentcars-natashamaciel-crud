@@ -3,6 +3,7 @@ const express = require('express')
 
 const Sequelize = sequelize.Sequelize
 
+// conectando o banco de dados
 const connection = new Sequelize(
     'testing',
     'root',
@@ -14,8 +15,7 @@ const connection = new Sequelize(
     }
 );
 
-
-
+// criando a tabela Veiculos no banco de dados
 const Veiculos = connection.define('veiculos', {
     id: {
         type: Sequelize.STRING,
@@ -61,6 +61,7 @@ connection.sync({force: true})
 const app = express()
 app.use(express.json());
 
+// resolvendo o problema de cors
 const allowCrossDomain = (req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')
     res.header('Access-Control-Allow-Headers', 'Content-Type')
@@ -70,7 +71,7 @@ const allowCrossDomain = (req, res, next) => {
 
 app.use(allowCrossDomain)
 
-
+// endpoint de post para criação de um novo veiculo
 app.post('/veiculos', (req, res) => {
     const resp = {}
 
@@ -84,6 +85,7 @@ app.post('/veiculos', (req, res) => {
     res.json(resp)
 })
 
+// endpoint de get para buscar todos os veiculos cadastrados
 app.get('/veiculos', (req, res) => {
     const resp = {}
 
@@ -100,6 +102,7 @@ app.get('/veiculos', (req, res) => {
     }
 })
 
+// endpoint de get para buscar um veiculo especifico pelo id dele
 app.get('/veiculos/:id', (req, res) => {
     const resp = {}
 
@@ -120,7 +123,8 @@ app.get('/veiculos/:id', (req, res) => {
         res.json(resp)
     }
 })
- 
+
+// endpoint de put para editar um veiculo especifico
 app.put('/veiculos/:id', (req, res) => {
     const resp = {}
 
@@ -143,6 +147,7 @@ app.put('/veiculos/:id', (req, res) => {
     }
 })
 
+// endpoint de delete para apagar um veiculo especifico atraves do id dele
 app.delete('/veiculos/:id', (req, res) => {
     let resp = {}
 
@@ -160,8 +165,8 @@ app.delete('/veiculos/:id', (req, res) => {
     res.json(resp)
 })
 
+// iniciando o servidor na porta 3000
 const port = 3000
-
 app.listen(port, () => {
   console.log(`On port ${port}`)
 })
